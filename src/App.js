@@ -9,7 +9,7 @@ function App() {
         <p>
           Edit src/App.js and save to reload.
         </p>
-        <button onclick="https://www.deepli.net">Click me</button>
+        <button onclick="window.location.href='https://www.deepli.net'">Click me</button>
         
         {/* <a
           
