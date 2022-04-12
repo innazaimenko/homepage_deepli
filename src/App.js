@@ -9,11 +9,11 @@ function App() {
         <p>
           Edit src/App.js and save to reload.
         </p>
-        <button onclick="myFunction()">Click me</button>
+        <button onclick="https://www.deepli.net">Click me</button>
         
         {/* <a
           
-          className="App-link"
+          onclick="myFunction()"
           href="https://www.deepli.net"
           target="_blank"
           rel="noopener noreferrer"
