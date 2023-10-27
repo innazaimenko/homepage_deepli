@@ -64,8 +64,16 @@
         <p style="margin-left:300px; margin-top: -15px;"> ...</p>
 
     </div>
-    <div id="headline_5"><p>About</p></div>
-    <div id="about"><p>We started as A-LabInsider in 2018, the software product was launched after 2.5 years of R&D. A non-technical founder had created a deeply technical product with no technical co-founder or external funds. Inna Zaimenko, the founder, did her PhD in Integrative Oncology and founded a company to help researchers to gain first-hand access to innovation developed by SMEs. Academic life science labs in Europe and North America - a software that tracks website content of universities and connects this information with reseach publications. This is how the company became known for. The company added focus on medical and other spaces and became specialized in software development and business partnerships for the good of companies.</p></div>
+    <div id="headline_2_data"><p>Data available:</p></div>
+    <div id="data_img"><span></span></div>
+    <div id="row">
+        <div id="column">
+        <img src="./data.png" alt="data" style="width:400%; margin-top: -20px; margin-left:380px;">
+        </div>
+    </div>
+    <div id="spacer" style="margin-top:500px;"><span></span></div>
+    <div id="headline_2_sift"><p>With ability to sift through topics</p></div>
+
     
     <div id="headline_6"><p>Software</p></div>
     <div id="portfolio2">
@@ -139,6 +147,13 @@
          </p></div>
     <div id="button"></div>
     <div id="button_title"><a href="mailto:inna@deepli.net"><p>Let's work together</p></a></div>
+
+    <div id="spacer_2" style="margin-top:50px;"><span></span></div>
+    
+    <div id="headline_5"><p>About</p></div>
+    <div id="about"><p>We started as A-LabInsider in 2018, the software product was launched after 2.5 years of R&D. A non-technical founder had created a deeply technical product with no technical co-founder or external funds. Inna Zaimenko, the founder, did her PhD in Integrative Oncology and founded a company to help researchers to gain first-hand access to innovation developed by SMEs. Academic life science labs in Europe and North America - a software that tracks website content of universities and connects this information with reseach publications. This is how the company became known for. The company added focus on medical and other spaces and became specialized in software development and business partnerships for the good of companies.</p></div>
+    
+
     <div id="headline_9"><p>For Press:</p></div>
     <div id="kit"><a href="./mediakit.pdf" type="_blank"><p>Download Media Kit here</p></a></div>
     
@@ -294,6 +309,28 @@
         line-height: 75px;
         margin-left: 400px;
         }
+        #headline_2_data {
+        font-size: 26px;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 300;
+        color: #000359;
+        width: 860px;
+        margin-top: 20px;
+        line-height: 75px;
+        margin-left: 600px;
+        }
+        #headline_2_sift {
+        font-size: 24px;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 300;
+        color: #000359;
+        width: 860px;
+        margin-top: -120px;
+        margin-bottom: 70px;
+        line-height: 75px;
+        margin-left: 500px;
+        }
+
         #headline_3 {
         font-size: 21px;
         font-family: 'Gilroy-Medium', sans-serif;
@@ -464,7 +501,6 @@
         width: 860px;
         }
         #button {
-        
         padding: 5px;
         border-radius: 3px;
         width: 250px;
@@ -474,9 +510,22 @@
         margin-left: 530px;
         margin-top: 40px;
         margin-bottom: 50px;
+        animation-name: spin;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
         }
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotateY(20deg);
+            }
+        }
+
         #button_title {
-        font-size: 14px;
+        font-size: 15px;
         font-family: 'Gilroy-Light', sans-serif;
         font-weight: 200;
         padding: 5px;
@@ -486,6 +535,17 @@
         text-align: center;
         margin-left: 530px;
         margin-top: -98px;
+        animation-name: spin;
+        animation-duration: 15000ms;
+        animation-iteration-count: infinite;
+        }
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotateY(1deg);
+            }
         }
         #headline_9 {
         font-size: 26px;
