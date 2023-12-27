@@ -283,6 +283,47 @@
           
           background-color: #EAF7F7;
         }
+        .modal-bg {
+            background-color: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s opacity 0.5s;   
+        }
+
+        .modal {
+            background-color: white;
+            border-radius: 30px;
+            width: 30%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .popup-active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 110px;
+            right: 290px;
+            font-weight: light;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+
         @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
         #cover_img {
         background: url(pexels-pixabay-37730-2_.jpg);
@@ -1234,6 +1275,15 @@
             <a href="./index.html"></a>
             <a href="./privacy.html"></a>
         </nav>
-        <script src="" async defer></script>
+        <button class="modal-btn">Modal</button>
+    
+        <div class="modal-bg">
+            <div class="modal">
+                <img style="border-radius: 30px;" src="./Frame1.png" alt="popup">
+                <span class="modal-close">X</span>
+            </div>
+            
+        </div>
+        <script src="./app.js" async defer></script>
     </body>
 </html>
