@@ -75,8 +75,32 @@
     <div id="spacer" style="margin-top:500px;"><span></span></div>
     <div id="headline_2_sift"><p>With ability to sift through topics</p></div>
 
+    <div id="offering">
+        <button id="mostvalue">Most value</button>
+        <div id="campaigns">
+            <p id="campaign_title">Marketing campaigns</p>
+            <p id="campaign_text">Powerful marketing campaigns to boost awareness among your prospects, generate new leads, sales, place inquiries. 
+                We take care of data filtering, marketing campaign setup, sending, handling Unsubscribes. You get inquiries from prospects to your inbox. One time campaigns or repeated at your schedule.</p>
+        </div>
+
+        <div id="bigdata">
+            
+            <p id="bigdata_title">Big data & Software, <br>
+                One-off</p>
+            <p id="bigdata_text">One-off price, unlimited N of users
+
+                PubMed & ClinicalTrials.gov data –
+                unlimited searches, extraction, segmentation, update, total bulk email export, authors parsed on first last name, market analysis. Video tutorial</p>
+            
+            <button id="trial"><a href="https://calendly.com/deepli">Request Trial</button></a>
+        </div>
+        <div id="consulting_card">
+            <p id="consulting_title">Consulting</p>
+            <p id="consulting_text">Sometimes your project can be challenging and you do not see the immediate solution for it with our data. However, we as a team of biologists can see beyond and can deliver you value, while you stay completely hands-off. Finding a rare collaborator, getting an article published are just few examples of projects we worked with.</p>
+        </div>
+    </div>
     
-    <div id="headline_6"><p>Software</p></div>
+    <div id="headline_6"><p>Single software programs</p></div>
     <div id="portfolio2">
         <p style="font-size:18px; font-family:'Gilroy-Light'; margin-left: 580px;">Benefits:</p>
         <p id="benefits_list">
@@ -259,7 +283,7 @@
         <figcaption style="font-size:10px; font-family='Gilroy-Light'; color:#000359;margin-left:180px;margin-right:-180px;"><a href="https://pubmed.ncbi.nlm.nih.gov/30560999/">Non-invasive metastasis prognosis from plasma metabolites in stage II colorectal cancer patients: The DACHS study</a></figcaption>
         </div>
     </div>
-    <!-- <div id="news"><p>Top News in Genetics (from Google API):</p></div>-->
+    <!-- <div id="news"><p>Top News in Genetics (from Google API):</p></div> -->
     <div id="newscontent">
         <div class="title1"></div>
         <div class="source_name1"></div>
@@ -605,6 +629,150 @@
         margin-right: 310px;
         line-height: 30px;
         width: 860px;
+        }
+        #offering {
+        display: flexbox;
+        box-sizing: border-box;    
+        width: 860 px;
+        border-style: none;
+        border-width: 3px;
+        color: #000359;
+        border-radius: 20px;
+        margin-left: 190px;
+        margin-right: 220px;
+        margin-bottom: 100px;
+        height: 500px;
+        }
+        #campaigns {
+        border-style: solid;
+        border-width: 2px;
+        color: #000359;
+        border-radius: 20px;
+        margin-left: 0px;
+        margin-right: 710px;
+        height: 500px;
+        width: 320px;
+        }
+        #campaign_title {
+        font-size: 26px;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 500;
+        color: #000359;
+        text-align: center;
+        margin-left: -270px;
+        margin-top: 60px;
+        width: 860px;
+
+        }
+        #campaign_text {
+        font-size: 16px;
+        font-family: 'Gilroy-Light', sans-serif;
+        font-weight: 300;
+        color: #000359;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: -10px;
+        margin-top: 90px;
+        width: 270px;
+        line-height: 27px;
+        }
+        #bigdata {
+        border-style: solid;
+        border-width: 2px;
+        background-color: #000359;
+        color: #000359;
+        border-radius: 20px;
+        margin-left: 340px;
+        margin-right: 350px;
+        margin-top: -500px;
+        height: 500px;
+        width: 340px;
+        }
+        #bigdata_title {
+        font-size: 26px;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        margin-left: -260px;
+        margin-top: 60px;
+        width: 860px;
+        }
+        #bigdata_text {
+        font-size: 16px;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 300;
+        color: white;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: -10px;
+        margin-top: 40px;
+        width: 280px;
+        line-height: 27px;
+        }
+        #mostvalue{
+        border-style: none;
+        color: white;
+        background-color: #000359;
+        padding-bottom: 30px;
+        padding-left: 14px;
+        width: 160px;
+        text-align: left;
+        padding-top: 10px;
+        border-radius: 20px;
+        margin-left: 340px;
+        margin-bottom: -40px;
+        font-size: 12px;
+        }
+        #trial {
+        border-style: none;
+        color: white;
+        background-color: orange;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-left: 60px;
+        margin-top: 35px;
+        font-size: 16px;
+        font-weight: 700;
+        }
+        a {
+        text-decoration: none;
+        }
+        #consulting_card {
+        border-style: solid;
+        border-width: 2px;
+        color: #000359;
+        border-radius: 20px;
+        margin-left: 700px;
+        margin-right: 0px;
+        margin-top: -500px;
+        height: 500px;
+        width: 320px;
+        }
+        #consulting_title {
+        font-size: 26px;
+        font-family: 'Gilroy-Medium', sans-serif;
+        font-weight: 500;
+        color: #000359;
+        text-align: center;
+        margin-left: -270px;
+        margin-top: 60px;
+        width: 860px;
+        }
+        #consulting_text {
+        font-size: 16px;
+        font-family: 'Gilroy-Light', sans-serif;
+        font-weight: 300;
+        color: #000359;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: -10px;
+        margin-top: 90px;
+        width: 275px;
+        line-height: 27px;
         }
         #headline_6 {
         font-size: 26px;
