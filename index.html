@@ -32,9 +32,10 @@
     <meta name="theme-color" content="#ffffff">
 
     
-
+    <div id="animation-container"></div>
     <div id="cover_img"><span></span></div>
     <div id="logo"><span></span></div>
+    
     <div id="header" ><p>When companies struggle to find <br> something they<span style="color: #2860FF"> turn to us</span></p></div>
     <div id="headline_2"><p>Data mining and business partnerships are our core</p></div>
     <div id="headline_3"><p>Since 2018</p></div>
@@ -62,8 +63,9 @@
         <p><span class="w3-tag w3-round  w3-yellow" style="font-size:13px; font-family:'Gilroy-Light';">Marketing</span><span class="hovertext" data-hover="✨ A company in biotech was seeking awareness among researchers about its products. We have created an outreach strategy, pulled the data and prepared and managed the campaign.">  Email marketing to relevant scientific labs</span></p>
         <p><span class="w3-tag w3-round  w3-green" style="font-size:13px; font-family:'Gilroy-Light';">Business</span><span class="hovertext" data-hover="✨ African distributor of drugs was seeking to buy the drugs from the list according to specific quantities. We have found the suppliers that agreed to provide the drugs in the specified quantity and ship to a destination country."> Wholesalers of drugs according to the list and quantities</span></p>
         <p style="margin-left:300px; margin-top: -15px;"> ...</p>
-
+    
     </div>
+    <div id="animation-container2"></div>
     <div id="headline_2_data"><p>Data available:</p></div>
     <div id="data_img"><span></span>
         <div id="row">
@@ -366,6 +368,19 @@ We started as A-LabInsider in 2018, the first software product was launched afte
             cursor: pointer;
         }
 
+        .shape {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            pointer-events: none; /* Make shapes not clickable */
+        }
+        header {
+            background-color: black;
+            height: 3cm;
+            position: relative;
+            overflow: hidden;
+        }
 
         @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
         #cover_img {
@@ -389,6 +404,20 @@ We started as A-LabInsider in 2018, the first software product was launched afte
         position: absolute;
         top: 30px;
         left: 30px;
+        }
+        #animation-container {
+        width: 1390px;
+        height: 790px;
+        position: absolute;
+        top: 700px;
+        left: 100px;
+        }
+        #animation-container2 {
+        width: 1390px;
+        height: 2790px;
+        position: absolute;
+        top: 1200px;
+        left: 100px;
         }
         #pubmedimage {
         background: url(pubmedsearch.png);
@@ -1496,6 +1525,57 @@ We started as A-LabInsider in 2018, the first software product was launched afte
             </div>
             
         </div>
-        <script src="./app.js" async defer></script>
+        <script>
+            const container = document.getElementById('animation-container');
+            const numberOfShapes = 20;
+            const shapes = [];
+
+            // Function to create a random shape
+            function createShape() {
+            const shape = document.createElement('div');
+            shape.classList.add('shape');
+            shape.style.backgroundColor = getRandomColor();
+            container.appendChild(shape);
+            return shape;
+            }
+
+            // Function to animate shapes
+            function animateShape(shape) {
+            let x = -20; // Initial position outside the viewport
+            let y = Math.random() * (window.innerHeight - 20); // Random vertical position
+            const speed = 1 + Math.random() * 2; // Random speed
+            const size = 10 + Math.random() * 20; // Random size
+
+            const moveShape = () => {
+                x += speed;
+                shape.style.transform = `translate(${x}px, ${y}px) scale(${size / 20})`;
+
+                // If shape moves outside the viewport, reset its position
+                if (x > window.innerWidth) {
+                x = -20;
+                y = Math.random() * (window.innerHeight - 20);
+                shape.style.backgroundColor = getRandomColor(); // Change color when repositioned
+                }
+
+                requestAnimationFrame(moveShape);
+            };
+
+            moveShape();
+            }
+
+            // Function to generate a random color
+            function getRandomColor() {
+            return `rgb(${Math.random() * 256}, ${Math.random() * 256}, ${Math.random() * 256})`;
+            }
+
+            // Create and animate multiple shapes
+            for (let i = 0; i < numberOfShapes; i++) {
+            const shape = createShape();
+            shapes.push(shape);
+            animateShape(shape);
+            }
+
+            
+        </script>
     </body>
 </html>
