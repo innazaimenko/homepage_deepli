@@ -33,7 +33,11 @@
 
     
     <div id="animation-container"></div>
-    <div id="cover_img"><span></span></div>
+    <div class="cover_img"><span></span></div>
+    <div id="buttonLogin" style="width: 100px; height: 30px; text-align: center; padding-top: 3px; position: absolute; background-color: #007bff; color: #fff; border-radius: 5px; cursor: pointer; font-size: 12pt; margin-top: -750px; margin-left: 1250px;">
+        <a href="https://platform.deepli.net" style="color: #fff; text-decoration: none;">Login</a>
+    </div>
+    
     <div id="logo"><span></span></div>
     
     <div id="header" ><p>When companies struggle to find <br> something they<span style="color: #2860FF"> turn to us</span></p></div>
@@ -369,6 +373,10 @@ We started as A-LabInsider in 2018, the first software product was launched afte
             cursor: pointer;
         }
 
+        #button:hover {
+            background-color: #0056b3;
+        }
+    
         .shape {
             position: absolute;
             width: 40px;
@@ -384,17 +392,27 @@ We started as A-LabInsider in 2018, the first software product was launched afte
         }
 
         @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
-        #cover_img {
-        background: url(pexels-pixabay-37730-2_.jpg);
+        .cover_img {
+        /* background: url(pexels-pixabay-37730-2_.jpg); */
+        background: url(Unknown-2.jpg) ;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         margin-top: -10px;
         background-size: 1440px;
-        width: 1400px;
+        /* width: 1400px;
+        height: 790px; */
+        width: 100%;
         height: 790px;
         position: relative;
-        
         }
+        @media only screen and (max-width: 1300px) {
+            .cover_img {
+                width: 1400px; /* Adjust background size for smaller screens */
+                height: 790px; /* Adjust the height for smaller screens */
+            }
+        }
+
+
         #logo {
         background: url(deepli-logo.png);
         background-repeat: no-repeat;
@@ -470,7 +488,8 @@ We started as A-LabInsider in 2018, the first software product was launched afte
         color: #000359;
         position: absolute;
         top: 295px;
-        left: 110px;
+        left: 410px;
+        
         line-height: 75px;
         width: 640px;
         }
@@ -480,7 +499,7 @@ We started as A-LabInsider in 2018, the first software product was launched afte
         font-weight: 300;
         color: #000359;
         width: 860px;
-        margin-top: -40px;
+        margin-top: -20px;
         line-height: 75px;
         margin-left: 400px;
         }
@@ -1177,9 +1196,7 @@ We started as A-LabInsider in 2018, the first software product was launched afte
                 background-image: linear-gradient(#EAF7F7, #f2f2fe)
             }
 
-            #cover_img{
-                display: none;
-            }
+           
             #logo {
             background: url(deepli-logo.png);
             background-repeat: no-repeat;
